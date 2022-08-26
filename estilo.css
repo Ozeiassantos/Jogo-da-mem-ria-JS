@@ -43,9 +43,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 700;
     width: 5rem;
     height: 6rem;
     background-color: #ffcf7f;
     border-radius: 00.625rem;
+
+    cursor: pointer;
+    color: transparent;
+
+    transform: rotatey(180deg);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease ;
+
+
+}
+.open {
+    background-color: #ff9000;
+    color: black;
+    transform: rotateY(0);
 
 }
