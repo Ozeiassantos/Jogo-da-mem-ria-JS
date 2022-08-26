@@ -1,6 +1,5 @@
 :root {
     font-size: 16px;
-
 }
 
 * {
@@ -15,14 +14,12 @@ body {
 .table {
     background-color: #3f88c5;
     height: 100vh;
-
     padding-top: 5rem;
 }
 
 .conteiner {
     margin: auto;
     width: 25vw;
-
 }
 
 .board {
@@ -33,7 +30,7 @@ body {
 
 
     background-color: #fffa62;
-    width: 40vw; 
+    width: 40vw;
     border-radius: 0.625rem;
     box-shadow: 0.875rem 0.875rem 0 0 #0004;
     padding: 0.5rem;
@@ -48,16 +45,13 @@ body {
     height: 6rem;
     background-color: #ffcf7f;
     border-radius: 00.625rem;
-
     cursor: pointer;
     color: transparent;
-
     transform: rotatey(180deg);
     transform-style: preserve-3d;
-    transition: transform 0.3s ease ;
-
-
+    transition: transform 0.3s ease;
 }
+
 .open {
     background-color: #ff9000;
     color: black;

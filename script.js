@@ -13,12 +13,11 @@ const load = () => {
 }
 
 const shuffle = (pairs) => {
-    for (let i = pairs.length -1; i > 0; i--) {
+    for (let i = pairs.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [pairs[i], pairs[j]] = [pairs[j], pairs[i]];
 
     }
-
     return pairs;
 }
 
@@ -29,7 +28,6 @@ const createCards = (pairs) => {
         card.innerText = pair;
         card.dataset.value = pair;
         card.addEventListener('click', isMatch);
-
         board.append(card);
     });
 }
@@ -43,7 +41,6 @@ function isMatch(value) {
         return;
     }
     selectedCard.classList.add('open');
-
     selectedCards.push(selectedCard);
 
     if (selectedCards.length > 1) {
@@ -51,7 +48,7 @@ function isMatch(value) {
         const card2 = selectedCards[1];
 
         if (card1.dataset.value === card2.dataset.value) {
-            scoreCount = scoreCount +1;
+            scoreCount = scoreCount + 1;
             score.innerText = `Score: ${scoreCount}`;
             selectedCards = [];
         } else {
